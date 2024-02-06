@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #0a192f;
+    /* Dark blue background */
+    --secondary-color: #233554;
+    /* Lighter blue for sections */
+    --text-color: #64ffda;
+    /* Bright green for accents */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: white;
+    /* Assuming the reference has light text */
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 10px 50px;
+    z-index: 10;
+    /* Ensure navbar stays on top */
+}
+
+ul.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 73%;
+    /* Align nav items to the right */
+}
+
+ul.nav-list a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+ul.nav-list a:hover {
+    color: white;
+    /* Change color on hover */
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 50px;
+    /* Add padding on the sides */
+}
+
+section h1 {
+    color: var(--text-color);
+    margin: 0;
+    /* Reset margin for consistent spacing */
+    font-size: 60px;
+}
+
+section h3 {
+    color: white;
+    font-size: 30px;
+}
+
+/* Add styles for project tiles */
+#projects {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-tile {
+    margin: 20px;
+    border: 3px solid var(--text-color);
+    /* Add border to project tiles */
+    transition: transform 0.1s ease;
+    /* Smooth transition for hover effect */
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge tiles on hover */
+}
+
+.project-image {
+    width: 80%;
+    /* Ensure images fill the tile */
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.project-title {
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+/* Add styles for contact section */
+#contact {
+    background-color: var(--secondary-color);
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-header h2 {
+    color: var(--text-color);
+}
+
+.contact-header p {
+    color: rgb(234, 243, 0);
+}
+
+.contact-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.contact-links a:hover {
+    color: rgb(174, 46, 46);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 769px) {
+    body {
+        background-color: #94aad0;
+    }
+
+    /* Adjustments for medium to large screens can go here */
+}
